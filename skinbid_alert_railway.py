@@ -6,11 +6,9 @@ from telegram.request import HTTPXRequest
 import asyncio
 import os
 
-# Citim datele din variabile de mediu Railway
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
-# Listă simplificată pentru test - poate fi extinsă
 skins = [
     "★ Karambit | Doppler (Factory New)",
     "★ Sport Gloves | Pandora's Box (Field-Tested)",
