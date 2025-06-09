@@ -60,7 +60,7 @@ async def main():
         skinbid_price = get_skinbid_price(skin)
         if csfloat_price and skinbid_price:
             discount = ((csfloat_price - skinbid_price) / csfloat_price) * 100
-            if discount >= 7:
+            if discount >= 4:
                 found_offer = True
                 await send_alert(skin, discount, skinbid_price, csfloat_price)
 
